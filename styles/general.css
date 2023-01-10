@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/*VAR*/
+:root {
+    --primary-color: #F94DAB;
+    --secondary-color: #DDCEFF;
+    --alternative-color: #5E32CF;
+    --light-background: #4F29A1;
+    --dark-background: #352559;
+}
+
+/*END VAR*/
+
+/*GENERAL*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    color: var(--black);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #4f29a1;
+    background-image: linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
+    background-image: -moz-linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
+    background-image: -webkit-linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--secondary-color);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:var(--secondary-color);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--secondary-color);
+  }
+
+/*END GENERAL*/
+
+/*HEADER*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    margin-top: 1rem;
+    height: 115px;
+    width: 150px;
+}
+
+/*END HEADER*/
+
+/*SECTION WELCOME*/
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.welcome-text p {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+}
+
+#welcome-text-span {
+    font-weight: bold;
+    background: #F94DAB;
+    background: -webkit-linear-gradient(to bottom, #5E32CF 0%, #F94DAB 100%);
+    background: -moz-linear-gradient(to bottom, #5E32CF 0%, #F94DAB 100%);
+    background: linear-gradient(to bottom, #5E32CF 0%, #F94DAB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.welcome-arrow {
+    height: 6rem;
+    width: 3.5rem;
+    background-image: url("../resources/dwn-arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/*END SECTION WELCOME*/
+
+/*SECTION SERVICES*/
+.services p {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.service-icon {
+    height: 80%;
+    padding: 1rem;
+    width: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: .4rem;
+}
+
+.service-button {
+    background-image: linear-gradient(to top, #F64CAC 0%, #8D37C8 100%);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 4rem;
+    margin: 0 auto;
+    padding: 3px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    margin: .5rem auto;
+}
+
+.service-button:hover {
+    color: var(--secondary-color);
+}
+
+.service-button span {
+    font-size: 1rem;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #42287c, #48298f, #4f29a1);
+    background-image: -moz-linear-gradient(to bottom, #42287c, #48298f, #4f29a1);
+    background-image: -webkit-linear-gradient(to bottom, #42287c, #48298f, #4f29a1);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.service-button:hover span {
+    background: transparent;
+}
+
+.web {
+    background-image: url("../resources/icon-webpage.png");
+}
+
+.app {
+    background-image: url("../resources/icon-mobile2.png");
+}
+
+.software {
+    background-image: url("../resources/icon-pc2.png");
+}
+
+.invitacion {
+    background-image: url("../resources/icon-ticket.png");
+}
+
+.qr {
+    background-image: url("../resources/logo-qr.png");
+}
+
+/*END SECTION SERVICES*/
+
+/*SECTION CONTACTO*/
+.contacto{
+    padding: 2rem;
+}
+.contacto h3{
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+}
+#contact-form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+#contact-form label{
+    color: var(--secondary-color);
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+    margin-bottom: -1rem;
+    z-index: 9;
+    background-color:#48298f;
+    width: fit-content;
+    padding-left: .35rem;
+    padding-right: .4rem;
+}
+.contact-input{
+    background-image: linear-gradient(to top, #F64CAC 0%, #8D37C8 100%);
+    border-radius: 1rem;
+    color: var(--primary-color);
+    height: 4rem;
+    padding: 3px;
+    width: 100%;
+    margin: .2rem auto;
+    margin-bottom: 1rem;
+}
+.contact-input input{
+    font-size: 1rem;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #48298f, #4f29a1);
+    background-image: -moz-linear-gradient(to bottom,  #48298f, #4f29a1);
+    background-image: -webkit-linear-gradient(to bottom, #48298f, #4f29a1);
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+.contact-textarea {
+    background-image: linear-gradient(to top, #F64CAC 0%, #8D37C8 100%);
+    border-radius: 1rem;
+    color: var(--primary-color);
+    height: 15rem;
+    padding: 3px;
+    width: 100%;
+    margin: .2rem auto;
+    margin-bottom: 1rem;
+}
+.contact-textarea textarea{
+    font-size: 1rem;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #48298f, #4f29a1);
+    background-image: -moz-linear-gradient(to bottom,  #48298f, #4f29a1);
+    background-image: -webkit-linear-gradient(to bottom, #48298f, #4f29a1);
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    color: var(--secondary-color);
+    resize: none;
+}
+/*END SECTION CONTACTO*/

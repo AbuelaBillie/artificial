@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/general.css">
+    <title>Artificial</title>
+</head>
+
+<body>
+    <header>
+        <img src="./resources/logo_texto.png" alt="logo artificial">
+    </header>
+    <main>
+        <div class="welcome">
+            <div class="welcome-text">
+                <p>Creamos esa</p>
+                <p><span id="welcome-text-span"></span>que</p>
+                <p>necesitas</p>
+            </div>
+            <div class="welcome-arrow bounce">
+            </div>
+        </div>
+        <div class="services">
+            <p>Con nosotros,</p>
+            <p>tu idea es una</p>
+            <p>realidad</p>
+            <div class="services-container">
+                <a class="service-button" href="#">
+                    <div class="service-icon web"></div>
+                    <span>PÁGINAS WEB</span>
+                </a>
+                <a class="service-button" href="#">
+                    <div class="service-icon app"></div>
+                    <span>APPS MOBILE</span>
+                </a>
+                <a class="service-button" href="#">
+                    <div class="service-icon software"></div>
+                    <span>SOFTWARE A MEDIDA</span>
+                </a>
+                <a class="service-button" href="#">
+                    <div class="service-icon invitacion"></div>
+                    <span>INVITACIONES DIGITALES</span>
+                </a>
+                <a class="service-button" href="#">
+                    <div class="service-icon qr"></div>
+                    <span>MENÚS QR</span>
+                </a>
+            </div>
+        </div>
+        <div class="contacto">
+            <h3>¡Contactanos!</h3>
+            <form id="contact-form">
+                <label for="nombre">Nombre</label>
+                <div class="contact-input">
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre...">
+                </div>
+                <label for="tel">Teléfono</label>
+                <div class="contact-input">
+                    <input type="tel" name="tel" id="tel" placeholder="Ingresá tu número de celular...">
+                </div>
+                <label for="email">Email</label>
+                <div class="contact-input">
+                    <input type="email" name="email" id="email" placeholder="Ingresá tu correo electrónico...">
+                </div>
+                <label for="mensaje">Mensaje</label>
+                <div class="contact-textarea">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10">Ingresá tu mensaje...</textarea>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed("#welcome-text-span", {
+            strings: ["Página Web", "Aplicación", "Invitación"],
+            typeSpeed: 130,
+            backSpeed: 50,
+            backDelay: 700,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>

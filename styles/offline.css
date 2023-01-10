@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/*VAR*/
+:root {
+    --primary-color: #F94DAB;
+    --secondary-color: #DDCEFF;
+    --alternative-color: #5E32CF;
+    --light-background: #4F29A1;
+    --dark-background: #352559;
+}
+
+/*END VAR*/
+
+/*GENERAL*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    color: var(--black);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: #4f29a1;
+    background-image: linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
+    background-image: -moz-linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
+    background-image: -webkit-linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
+   
+}
+/*END GENERAL*/
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 95vh;
+    padding: 2rem;
+}
+
+.welcome p {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+}
+.sticker{
+    height: 17rem;
+    width: 20rem;
+    background-image: url("../resources/offline_sticker.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

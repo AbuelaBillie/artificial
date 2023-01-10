@@ -337,3 +337,17 @@ header img {
     border-radius: 1rem;
 }
 /*END SECTION CONTACTO*/
+
+/*FOOTER*/
+footer{
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+}
+.logo-footer{
+    background-image: url("../resources/texto_logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.5rem;
+}
+/*END FOOTER*/

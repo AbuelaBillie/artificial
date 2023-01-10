@@ -5,7 +5,7 @@
     --primary-color: #F94DAB;
     --secondary-color: #DDCEFF;
     --alternative-color: #5E32CF;
-    --light-background: #4F29A1;
+    --light-background: #48298f;
     --dark-background: #352559;
 }
 
@@ -30,11 +30,7 @@ a {
 }
 
 body {
-    background: #4f29a1;
-    background-image: linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
-    background-image: -moz-linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
-    background-image: -webkit-linear-gradient(to bottom, #352559, #3b276b, #42287c, #48298f, #4f29a1);
-
+    background: var(--light-background);
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--secondary-color);
@@ -72,7 +68,7 @@ header img {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 90vh;
+    height: 85vh;
 }
 
 .welcome-text p {
@@ -141,6 +137,7 @@ header img {
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    margin-bottom: 4rem;
 }
 
 .service-icon {
@@ -176,6 +173,7 @@ header img {
 
 .service-button span {
     font-size: 1rem;
+    font-weight: bold;
     align-items: center;
     background-image: linear-gradient(to bottom, #42287c, #48298f, #4f29a1);
     background-image: -moz-linear-gradient(to bottom, #42287c, #48298f, #4f29a1);
@@ -213,9 +211,44 @@ header img {
 
 /*END SECTION SERVICES*/
 
+/*SECTION NUBE*/
+.borde-nube{
+    background-image: url("../resources/borde-nube.png");
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 3rem;
+    width: 100%;
+    margin-top: -.1rem;
+}
+.superior{
+    transform: rotate(180deg);
+    margin-top: 0;
+    margin-bottom: -.1rem;
+}
+.nube{
+    color: var(--light-background);
+    background-color: var(--secondary-color);
+    padding: 3rem 0;
+}
+.nube h3{
+    padding: 0 2.2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.nube p{
+    padding: 0 2.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/*END SECTION NUBE*/
+
 /*SECTION CONTACTO*/
 .contacto{
     padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 .contacto h3{
     text-align: center;
@@ -284,5 +317,23 @@ header img {
     padding: 1rem;
     color: var(--secondary-color);
     resize: none;
+}
+.contact-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+.contact-button button{
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, #F64CAC 0%, #8D37C8 100%);
+    background-image: -moz-linear-gradient(to top, #F64CAC 0%, #8D37C8 100%);
+    background-image: -webkit-linear-gradient(to top, #F64CAC 0%, #8D37C8 100%);
+    border:none;
+    border-radius: 1rem;
 }
 /*END SECTION CONTACTO*/

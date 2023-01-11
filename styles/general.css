@@ -154,7 +154,7 @@ header img {
     background-image: linear-gradient(to top, #F64CAC 0%, #8D37C8 100%);
     border-radius: 1rem;
     box-sizing: border-box;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -175,9 +175,7 @@ header img {
     font-size: 1rem;
     font-weight: bold;
     align-items: center;
-    background-image: linear-gradient(to bottom, #42287c, #48298f, #4f29a1);
-    background-image: -moz-linear-gradient(to bottom, #42287c, #48298f, #4f29a1);
-    background-image: -webkit-linear-gradient(to bottom, #42287c, #48298f, #4f29a1);
+    background-color: var(--light-background);
     border-radius: 1rem;
     display: flex;
     justify-content: center;
